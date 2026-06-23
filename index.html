@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ГранитПенза — Установка памятников, оград, благоустройство захоронений</title>
+    <meta name="description" content="Проектирование, изготовление и установка памятников любой сложности в Пензе. Установка оград, цоколя, монтаж и демонтаж.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6 (бесплатные иконки) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+    <div class="container">
+        <div class="topbar-contacts">
+            <a href="tel:+78412000000" class="phone"><i class="fas fa-phone" style="margin-right:6px;"></i> +7 (8412) 00-00-00</a>
+            <a href="mailto:info@granitpenza.ru"><i class="fas fa-envelope" style="margin-right:6px;"></i> info@granitpenza.ru</a>
+            <span><i class="far fa-clock" style="margin-right:6px;"></i> Пн–Пт 9:00–19:00 | Сб–Вс без выходных</span>
+        </div>
+        <div class="topbar-right"><i class="fas fa-map-marker-alt" style="margin-right:6px;"></i> Работаем по всей Пензенской области</div>
+    </div>
+</div>
+
+<!-- HEADER -->
+<header id="top">
+    <div class="header-inner">
+        <a href="#top" class="logo">
+            <div class="logo-icon">Г</div>
+            <div class="logo-text">
+                <div class="logo-name">ГранитПенза</div>
+                <div class="logo-sub">Памятники и благоустройство</div>
+            </div>
+        </a>
+        <nav>
+            <a href="#catalog" class="nav-link">Каталог</a>
+            <a href="#calculator" class="nav-link">Калькулятор</a>
+            <a href="#about" class="nav-link">О компании</a>
+            <a href="#gallery" class="nav-link">Работы</a>
+            <a href="#faq" class="nav-link">FAQ</a>
+            <a href="#contact" class="nav-link">Контакты</a>
+        </nav>
+        <a href="#contact" class="header-cta">Оставить заявку</a>
+        <button class="burger" onclick="toggleMenu()" aria-label="Меню">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+        <a href="#catalog" onclick="toggleMenu()">Каталог</a>
+        <a href="#calculator" onclick="toggleMenu()">Калькулятор цены</a>
+        <a href="#about" onclick="toggleMenu()">О компании</a>
+        <a href="#gallery" onclick="toggleMenu()">Галерея работ</a>
+        <a href="#faq" onclick="toggleMenu()">FAQ</a>
+        <a href="#contact" onclick="toggleMenu()">Контакты</a>
+        <a href="tel:+78412000000" style="color: var(--gold-light); margin-top:8px;"><i class="fas fa-phone" style="margin-right:8px;"></i> +7 (8412) 00-00-00</a>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-inner">
+        <div class="hero-content">
+            <div class="hero-label">Пенза и область</div>
+            <h1>Память,<br><span>увековеченная</span><br>во времени</h1>
+            <p class="hero-desc">Проектирование, изготовление и установка памятников любой сложности. Ограды, цоколи, благоустройство захоронений — под ключ.</p>
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="openModal()">Сделать заказ</button>
+                <a href="javascript:void(0)" class="btn-outline" onclick="openPhoneModal()"><i class="fas fa-phone" style="margin-right:8px;"></i> Позвонить сейчас</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-card">
+                <h3>Наши показатели</h3>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="hero-stat-num">15+</div>
+                        <div class="hero-stat-label">лет в бизнесе</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-num">800+</div>
+                        <div class="hero-stat-label">завершённых проектов</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-num">2</div>
+                        <div class="hero-stat-label">года гарантии</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-num">14</div>
+                        <div class="hero-stat-label">дней изготовления</div>
+                    </div>
+                </div>
+                <a href="javascript:void(0)" class="hero-phone-big" onclick="openPhoneModal()">
+                    <i class="fas fa-phone" style="margin-right:10px;"></i> +7 (8412) 00-00-00
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ADVANTAGES -->
+<section class="advantages" id="about">
+    <h2 class="section-title">Почему выбирают нас</h2>
+    <p class="section-sub">Мы работаем на репутацию — каждый памятник это наша визитная карточка</p>
+    <div class="adv-grid">
+        <div class="adv-card">
+            <div class="adv-icon"><i class="fas fa-shield-alt"></i></div>
+            <h3>Гарантия на материал и монтаж</h3>
+            <p>Предоставляем гарантию на работы от 2 лет в зависимости от сложности проекта. Работаем официально по договору.</p>
+        </div>
+        <div class="adv-card">
+            <div class="adv-icon"><i class="fas fa-car"></i></div>
+            <h3>Выезд специалиста бесплатно</h3>
+            <p>Наш специалист выезжает на место для оценки объёма работ, выполнения замеров с каталогом и образцами камня.</p>
+        </div>
+        <div class="adv-card">
+            <div class="adv-icon"><i class="fas fa-star"></i></div>
+            <h3>Опыт более 15 лет</h3>
+            <p>Установка памятников и благоустройство захоронений производится на всех кладбищах Пензы и Пензенской области.</p>
+        </div>
+        <div class="adv-card">
+            <div class="adv-icon"><i class="fas fa-ruble-sign"></i></div>
+            <h3>Цены от производителя</h3>
+            <p>Работаем напрямую с карьерами — без посредников. Цены ниже рыночных, качество гранита подтверждено сертификатами.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CATALOG CATEGORIES -->
+<section class="catalog" id="catalog">
+    <h2 class="section-title">Каталог услуг</h2>
+    <p class="section-sub">Полный каталог — памятники из гранита и мрамора, ограды, аксессуары для оформления захоронений</p>
+    <div class="catalog-grid">
+        <div class="cat-card" onclick="filterCatalog('granite')">
+            <div class="cat-img"><i class="fas fa-mountain"></i></div>
+            <div class="cat-body">
+                <h3>Памятники из гранита</h3>
+                <div class="cat-price">от <strong>18 000 ₽</strong></div>
+            </div>
+        </div>
+        <div class="cat-card" onclick="filterCatalog('marble')">
+            <div class="cat-img"><i class="fas fa-archway"></i></div>
+            <div class="cat-body">
+                <h3>Памятники из мрамора</h3>
+                <div class="cat-price">от <strong>14 000 ₽</strong></div>
+            </div>
+        </div>
+        <div class="cat-card" onclick="filterCatalog('fence')">
+            <div class="cat-img"><i class="fas fa-fence"></i></div>
+            <div class="cat-body">
+                <h3>Ограды</h3>
+                <div class="cat-price">от <strong>12 000 ₽</strong></div>
+            </div>
+        </div>
+        <div class="cat-card" onclick="filterCatalog('socle')">
+            <div class="cat-img"><i class="fas fa-layer-group"></i></div>
+            <div class="cat-body">
+                <h3>Цоколя</h3>
+                <div class="cat-price">от <strong>8 000 ₽</strong></div>
+            </div>
+        </div>
+        <div class="cat-card" onclick="filterCatalog('improve')">
+            <div class="cat-img"><i class="fas fa-tree"></i></div>
+            <div class="cat-body">
+                <h3>Благоустройство</h3>
+                <div class="cat-price">от <strong>5 000 ₽</strong></div>
+            </div>
+        </div>
+        <div class="cat-card" onclick="filterCatalog('accessories')">
+            <div class="cat-img"><i class="fas fa-candle-holder"></i></div>
+            <div class="cat-body">
+                <h3>Вазоны и лампады</h3>
+                <div class="cat-price">от <strong>2 500 ₽</strong></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CATALOG ITEMS -->
+<section class="catalog-items">
+    <div class="container">
+        <h2 class="section-title" style="margin-bottom:8px">Популярные позиции</h2>
+        <p class="section-sub">Другие размеры и формы — по запросу, делаем индивидуально</p>
+    </div>
+    <div class="items-grid" id="itemsGrid">
+
+        <div class="item-card" data-cat="granite">
+            <div class="item-img"><i class="fas fa-mountain"></i>
+                <span class="item-badge">Хит</span>
+            </div>
+            <div class="item-body">
+                <h3>Памятник вертикальный «Классик»</h3>
+                <div class="item-dims">
+                    <span class="dim-tag">120×60 см</span>
+                    <span class="dim-tag">Гранит габбро</span>
+                </div>
+                <p class="item-desc">Стандартная вертикальная стела из чёрного гранита габбро-диабаз. Полировка, гравировка портрета и надписи включена. Возможны любые размеры.</p>
+                <div class="item-footer">
+                    <div class="item-price">
+                        <div class="item-price-from">цена от</div>
+                        <div class="item-price-val">18 000 <span class="item-price-unit">₽</span></div>
+                    </div>
+                    <button class="btn-card" onclick="openModal()">Заказать</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="item-card" data-cat="granite">
+            <div class="item-img"><i class="fas fa-mountain"></i></div>
+            <div class="item-body">
+                <h3>Памятник вертикальный «Резной»</h3>
+                <div class="item-dims">
+                    <span class="dim-tag">130×65 см</span>
+                    <span class="dim-tag">Гранит красный</span>
+                </div>
+                <p class="item-desc">Вертикальная стела с художественной резьбой. Красный гранит, полировка с двух сторон. Индивидуальный дизайн по фото заказчика.</p>
+                <div class="item-footer">
+                    <div class="item-price">
+                        <div class="item-price-from">цена от</div>
+                        <div class="item-price-val">28 000 <span class="item-price-unit">₽</span></div>
+                    </div>
+                    <button class="btn-card" onclick="openModal()">Заказать</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="item-card" data-cat="granite">
+            <div class="item-img"><i class="fas fa-mountain"></i>
+                <span class="item-badge">Двойной</span>
+            </div>
+            <div class="item-body">
+                <h3>Памятник двойной «Семейный»</h3>
+                <div class="item-dims">
+                    <span class="dim-tag">120×100 см</span>
+                    <span class="dim-tag">Гранит габбро</span>
+                </div>
+                <p class="item-desc">Памятник для двоих захоронений. Широкая стела из чёрного гранита с двумя портретами и двумя надписями.</p>
+                <div class="item-footer">
+                    <div class="item-price">
+                        <div class="item-price-from">цена от</div>
+                        <div class="item-price-val">36 000 <span class="item-price-unit">₽</span></div>
+                    </div>
+                    <button class="btn-card" onclick="openModal()">Заказать</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="item-card" data-cat="marble">
+            <div class="item-img"><i class="fas fa-archway"></i></div>
+            <div class="item-body">
+                <h3>Памятник из мрамора «Классик»</h3>
+                <div class="item-dims">
+                    <span class="dim-tag">100×50 см</span>
+                    <span class="dim-tag">Мрамор белый</span>
+                </div>
+                <p class="item-desc">Традиционная вертикальная стела из белого мрамора. Полировка, гравировка. Поставляется с цоколем.</p>
+                <div class="item-footer">
+                    <div class="item-price">
+                        <div class="item-price-from">цена от</div>
+                        <div class="item-price-val">14 000 <span class="item-price-unit">₽</span></div>
+                    </div>
+                    <button class="btn-card" onclick="openModal()">Заказать</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="item-card" data-cat="fence">
+            <div class="item-img"><i class="fas fa-fence"></i></div>
+            <div class="item-body">
+                <h3>Ограда из профильной трубы</h3>
+                <div class="item-dims">
+                    <span class="dim-tag">2×1.5 м</span>
+                    <span class="dim-tag">Металл</span>
+                </div>
+                <p class="item-desc">Стандартная ограда из профильной трубы с покраской. Устойчива к коррозии. Размеры под любой участок.</p>
+                <div class="item-footer">
+                    <div class="item-price">
+                        <div class="item-price-from">цена от</div>
+                        <div class="item-price-val">12 000 <span class="item-price-unit">₽</span></div>
+                    </div>
+                    <button class="btn-card" onclick="openModal()">Заказать</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="item-card" data-cat="socle">
+            <div class="item-img"><i class="fas fa-layer-group"></i></div>
+            <div class="item-body">
+                <h3>Цоколь гранитный</h3>
+                <div class="item-dims">
+                    <span class="dim-tag">200×100 см</span>
+                    <span class="dim-tag">Гранит</span>
+                </div>
+                <p class="item-desc">Гранитный цоколь для оформления участка захоронения. Полировка, возможна инкрустация. Любые размеры под участок.</p>
+                <div class="item-footer">
+                    <div class="item-price">
+                        <div class="item-price-from">цена от</div>
+                        <div class="item-price-val">22 000 <span class="item-price-unit">₽</span></div>
+                    </div>
+                    <button class="btn-card" onclick="openModal()">Заказать</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- CALCULATOR -->
+<section class="calculator" id="calculator">
+    <h2 class="section-title">Рассчитайте стоимость</h2>
+    <p class="section-sub">Укажите параметры — получите ориентировочную цену. Точный расчёт сделает наш специалист бесплатно.</p>
+    <div class="calc-box">
+        <div class="calc-grid">
+            <div class="calc-field">
+                <label class="calc-label">Тип изделия</label>
+                <select class="calc-select" id="calcType" onchange="calculate()">
+                    <option value="granite_v">Памятник гранит (верт.)</option>
+                    <option value="granite_h">Памятник гранит (гориз.)</option>
+                    <option value="marble_v">Памятник мрамор (верт.)</option>
+                    <option value="double">Двойной памятник</option>
+                    <option value="fence">Ограда металлическая</option>
+                    <option value="socle">Цоколь гранитный</option>
+                </select>
+            </div>
+            <div class="calc-field">
+                <label class="calc-label">Материал</label>
+                <select class="calc-select" id="calcMaterial" onchange="calculate()">
+                    <option value="gabbro">Гранит габбро-диабаз</option>
+                    <option value="red">Гранит красный</option>
+                    <option value="grey">Гранит серый</option>
+                    <option value="marble">Мрамор белый</option>
+                </select>
+            </div>
+            <div class="calc-field">
+                <label class="calc-label">Высота стелы (см)</label>
+                <select class="calc-select" id="calcHeight" onchange="calculate()">
+                    <option value="80">80 см</option>
+                    <option value="100">100 см</option>
+                    <option value="120" selected>120 см</option>
+                    <option value="150">150 см</option>
+                    <option value="180">180 см</option>
+                </select>
+            </div>
+            <div class="calc-field">
+                <label class="calc-label">Ширина стелы (см)</label>
+                <select class="calc-select" id="calcWidth" onchange="calculate()">
+                    <option value="45">45 см</option>
+                    <option value="50">50 см</option>
+                    <option value="60" selected>60 см</option>
+                    <option value="70">70 см</option>
+                    <option value="100">100 см</option>
+                </select>
+            </div>
+            <div class="calc-field full">
+                <label class="calc-label">Дополнительные работы</label>
+                <div style="display:flex; flex-wrap:wrap; gap:10px; margin-top:4px">
+                    <label style="display:flex;align-items:center;gap:8px;color:rgba(255,255,255,0.8);font-size:14px;cursor:pointer;">
+                        <input type="checkbox" id="chkPortrait" onchange="calculate()" style="accent-color:var(--gold);width:18px;height:18px;"> Гравировка портрета (+3 500 ₽)
+                    </label>
+                    <label style="display:flex;align-items:center;gap:8px;color:rgba(255,255,255,0.8);font-size:14px;cursor:pointer;">
+                        <input type="checkbox" id="chkText" onchange="calculate()" checked style="accent-color:var(--gold);width:18px;height:18px;"> Гравировка текста (+1 500 ₽)
+                    </label>
+                    <label style="display:flex;align-items:center;gap:8px;color:rgba(255,255,255,0.8);font-size:14px;cursor:pointer;">
+                        <input type="checkbox" id="chkInstall" onchange="calculate()" style="accent-color:var(--gold);width:18px;height:18px;"> Установка на кладбище (+5 000 ₽)
+                    </label>
+                    <label style="display:flex;align-items:center;gap:8px;color:rgba(255,255,255,0.8);font-size:14px;cursor:pointer;">
+                        <input type="checkbox" id="chkDelivery" onchange="calculate()" style="accent-color:var(--gold);width:18px;height:18px;"> Доставка по Пензе (+2 000 ₽)
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="calc-result">
+            <div>
+                <div class="calc-res-item-label">Стоимость изделия</div>
+                <div class="calc-res-item-val" id="resProduct">—</div>
+            </div>
+            <div>
+                <div class="calc-res-item-label">Доп. работы</div>
+                <div class="calc-res-item-val" id="resExtra">—</div>
+            </div>
+            <div>
+                <div class="calc-res-item-label">Итого от</div>
+                <div class="calc-res-item-val" id="resTotal">—</div>
+            </div>
+        </div>
+        <div style="text-align:center">
+            <button class="btn-primary" onclick="openModal()" style="font-size:15px;padding:14px 32px;">
+                Получить точный расчёт бесплатно
+            </button>
+        </div>
+        <p class="calc-note">* Расчёт ориентировочный. Точная цена зависит от сложности работ и устанавливается после осмотра специалистом.</p>
+    </div>
+</section>
+
+<!-- CTA BANNER -->
+<div class="cta-banner">
+    <h2>Профессиональная консультация — бесплатно</h2>
+    <p>Получите экспертное мнение или расчёт от специалиста уже сегодня</p>
+    <div class="cta-row">
+        <button class="btn-primary" onclick="openModal()">Отправить заявку</button>
+        <span style="color:rgba(255,255,255,0.3)">или звоните:</span>
+        <a href="javascript:void(0)" class="cta-phone" onclick="openPhoneModal()"><i class="fas fa-phone" style="margin-right:8px;"></i> +7 (8412) 00-00-00</a>
+    </div>
+</div>
+
+<!-- USP STRIP -->
+<div class="usp-strip">
+    <div class="usp-inner">
+        <div class="usp-item"><i class="fas fa-user-check" style="margin-right:8px;"></i> Выездной специалист</div>
+        <div class="usp-item"><i class="fas fa-award" style="margin-right:8px;"></i> Опыт более 15 лет</div>
+        <div class="usp-item"><i class="fas fa-truck" style="margin-right:8px;"></i> Бесплатная доставка</div>
+        <div class="usp-item"><i class="fas fa-check-circle" style="margin-right:8px;"></i> Гарантия на монтаж</div>
+        <div class="usp-item"><i class="fas fa-tags" style="margin-right:8px;"></i> Цены от производителя</div>
+        <div class="usp-item"><i class="fas fa-file-signature" style="margin-right:8px;"></i> Работаем по договору</div>
+        <div class="usp-item"><i class="fas fa-flag" style="margin-right:8px;"></i> Все кладбища Пензы</div>
+    </div>
+</div>
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+    <h2 class="section-title">Галерея работ</h2>
+    <p class="section-sub">Примеры выполненных проектов — памятники, ограды, комплексное благоустройство</p>
+    <div class="gallery-grid">
+        <div class="gallery-item"><i class="fas fa-mountain"></i></div>
+        <div class="gallery-item"><i class="fas fa-archway"></i></div>
+        <div class="gallery-item"><i class="fas fa-fence"></i></div>
+        <div class="gallery-item"><i class="fas fa-layer-group"></i></div>
+        <div class="gallery-item"><i class="fas fa-tree"></i></div>
+        <div class="gallery-item"><i class="fas fa-mountain"></i></div>
+        <div class="gallery-item"><i class="fas fa-cross"></i></div>
+        <div class="gallery-item"><i class="fas fa-candle-holder"></i></div>
+        <div class="gallery-item"><i class="fas fa-mountain"></i></div>
+        <div class="gallery-item"><i class="fas fa-archway"></i></div>
+        <div class="gallery-item"><i class="fas fa-fence"></i></div>
+        <div class="gallery-item"><i class="fas fa-layer-group"></i></div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+    <h2 class="section-title">Часто задаваемые вопросы</h2>
+    <p class="section-sub">Ответы на самые популярные вопросы наших клиентов</p>
+    <div class="faq-list">
+        <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+                Когда можно устанавливать памятник после похорон?
+                <span class="arrow">▼</span>
+            </button>
+            <div class="faq-a">
+                Специалисты рекомендуют устанавливать памятник по прошествии 12–14 месяцев после похорон. За это время насыпь на могиле осядет, грунт приобретёт нужную плотность и станет надёжной основой. Максимальная просадка почвы происходит в зимний период, поэтому если похороны были весной — рекомендуется ждать следующей весны. Точные сроки может дать только специалист с учётом особенности местности и грунта в Пензе.
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+                Какой срок изготовления памятников?
+                <span class="arrow">▼</span>
+            </button>
+            <div class="faq-a">
+                <strong>Из гранита и элементов художественной ковки</strong> — 14–30 дней с момента заключения договора.<br>
+                <strong>Из литьевого мрамора</strong> — около 20 дней.<br>
+                <strong>Сварные ритуальные ограды</strong> — в течение 14 дней.<br>
+                Сроки могут меняться в зависимости от сложности заказа и загрузки производства.
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+                За какими памятниками проще ухаживать?
+                <span class="arrow">▼</span>
+            </button>
+            <div class="faq-a">
+                Самые неприхотливые — цветные граниты и габбро-диабаз. Они протираются слабым мыльным раствором или сухой чистой тряпкой. Можно применять специальные средства для полировки из строительных магазинов. Мрамор, имеющий пористую структуру, требует дополнительного ухода — его необходимо регулярно обрабатывать специальными защитными средствами, чтобы предотвратить появление мха и плесени.
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+                На какие параметры ориентироваться при выборе памятника?
+                <span class="arrow">▼</span>
+            </button>
+            <div class="faq-a">
+                При выборе можно ориентироваться на: материал изготовления (долговечность и практичность), количество людей в захоронении, для кого устанавливается стела, стоимость и форму изделия, элементы оформления на надгробии, религиозную принадлежность усопшего, цвет памятника. Наш специалист поможет подобрать оптимальный вариант с учётом всех пожеланий.
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+                Нужно ли разрешение на установку памятника?
+                <span class="arrow">▼</span>
+            </button>
+            <div class="faq-a">
+                Да, на большинстве кладбищ Пензы требуется получить разрешение от администрации кладбища. Обычно это несложная процедура. Мы помогаем нашим клиентам с оформлением документов — уточните у нашего менеджера при заказе.
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+                Как происходит оплата?
+                <span class="arrow">▼</span>
+            </button>
+            <div class="faq-a">
+                Работаем по договору. Стандартная схема: 50% предоплата при заключении договора, 50% после выполнения работ. Принимаем наличные и безналичный расчёт. Для юридических лиц — работаем по счёту с НДС.
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+    <h2 class="section-title">Свяжитесь с нами</h2>
+    <p class="section-sub">Оставьте заявку — менеджер перезвонит в течение 15 минут</p>
+    <div class="contact-inner">
+        <div class="contact-info">
+            <h2>Как нас найти</h2>
+            <p>Мы работаем без выходных. Специалист выезжает на все кладбища Пензы и Пензенской области.</p>
+            <div class="contact-detail">
+                <div class="cdet">
+                    <div class="cdet-icon"><i class="fas fa-phone"></i></div>
+                    <div>
+                        <strong>+7 (8412) 00-00-00</strong>
+                        <span>Поддержка без выходных</span>
+                    </div>
+                </div>
+                <div class="cdet">
+                    <div class="cdet-icon"><i class="fas fa-envelope"></i></div>
+                    <div>
+                        <strong>info@granitpenza.ru</strong>
+                        <span>Напишите нам</span>
+                    </div>
+                </div>
+                <div class="cdet">
+                    <div class="cdet-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div>
+                        <strong>г. Пенза</strong>
+                        <span>Работаем по всей Пензенской области</span>
+                    </div>
+                </div>
+                <div class="cdet">
+                    <div class="cdet-icon"><i class="fas fa-clock"></i></div>
+                    <div>
+                        <strong>Пн–Пт: 9:00–19:00</strong>
+                        <span>Сб–Вс: без выходных</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-card">
+            <h3>Оставить заявку</h3>
+            <p>Напишите нам, менеджер свяжется с вами для уточнения деталей.</p>
+            <div id="mainForm">
+                <div class="form-group">
+                    <label>Ваше имя *</label>
+                    <input type="text" id="fname" placeholder="Иван Иванов">
+                </div>
+                <div class="form-group">
+                    <label>Номер телефона *</label>
+                    <input type="tel" id="fphone" placeholder="+7 (___) ___-__-__">
+                </div>
+                <div class="form-group">
+                    <label>Что вас интересует?</label>
+                    <select id="ftype">
+                        <option>Памятник из гранита</option>
+                        <option>Памятник из мрамора</option>
+                        <option>Ограда</option>
+                        <option>Цоколь</option>
+                        <option>Благоустройство</option>
+                        <option>Другое</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Комментарий</label>
+                    <textarea id="fcomment" placeholder="Опишите ваши пожелания или задайте вопрос..."></textarea>
+                </div>
+                <div class="form-checkbox">
+                    <input type="checkbox" id="fcheck" checked>
+                    <label for="fcheck">Разрешаю сбор и обработку персональных данных в соответствии с Политикой конфиденциальности</label>
+                </div>
+                <button class="btn-submit" onclick="submitForm('mainForm', 'mainSuccess')">Отправить заявку</button>
+                <div class="success-msg" id="mainSuccess">Спасибо! Ваша заявка принята. Мы перезвоним в ближайшее время.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <div class="logo" style="margin-bottom:14px">
+                <div class="logo-icon">Г</div>
+                <div class="logo-text">
+                    <div class="logo-name">ГранитПенза</div>
+                </div>
+            </div>
+            <p>Проектирование, изготовление и установка памятников любой сложности в Пензе и Пензенской области с 2009 года.</p>
+            <div class="footer-social">
+                <div class="soc-btn" title="Telegram"><i class="fab fa-telegram-plane"></i></div>
+                <div class="soc-btn" title="ВКонтакте"><i class="fab fa-vk"></i></div>
+                <div class="soc-btn" title="WhatsApp"><i class="fab fa-whatsapp"></i></div>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h4>О компании</h4>
+            <ul>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#" onclick="return false">Оплата</a></li>
+                <li><a href="#" onclick="return false">Как заказать</a></li>
+                <li><a href="#" onclick="return false">Сроки изготовления</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Услуги</h4>
+            <ul>
+                <li><a href="#catalog">Памятники из гранита</a></li>
+                <li><a href="#catalog">Памятники из мрамора</a></li>
+                <li><a href="#catalog">Ограды</a></li>
+                <li><a href="#catalog">Цоколя</a></li>
+                <li><a href="#catalog">Благоустройство</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Контакты</h4>
+            <ul>
+                <li><a href="tel:+78412000000"><i class="fas fa-phone" style="margin-right:6px;"></i> +7 (8412) 00-00-00</a></li>
+                <li><a href="mailto:info@granitpenza.ru"><i class="fas fa-envelope" style="margin-right:6px;"></i> info@granitpenza.ru</a></li>
+                <li><a href="#contact">Написать нам</a></li>
+                <li><a href="#" onclick="return false">Политика конфиденциальности</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom container">
+        <span>ГранитПенза © 2009–2026 — Установка памятников, оград, благоустройство захоронений</span>
+        <span>г. Пенза и Пензенская область</span>
+    </div>
+</footer>
+
+<!-- FLOATING PHONE BUTTON (с модальным окном) -->
+<button class="floating-phone" onclick="openPhoneModal()" title="Позвонить">
+    <i class="fas fa-phone"></i>
+</button>
+
+<!-- MODAL ДЛЯ ЗВОНКА -->
+<div class="modal-overlay" id="phoneModalOverlay" onclick="closePhoneModalOutside(event)">
+    <div class="modal" style="max-width:380px; text-align:center;">
+        <button class="modal-close" onclick="closePhoneModal()">✕</button>
+        <h3 style="margin-bottom:8px;"><i class="fas fa-phone" style="color:var(--gold); margin-right:10px;"></i>Позвоните нам</h3>
+        <p style="margin-bottom:24px; color:var(--text-light);">Свяжитесь с нами прямо сейчас — мы на связи без выходных</p>
+        <div style="background:var(--gray-bg); border-radius:12px; padding:20px; margin-bottom:24px;">
+            <a href="tel:+78412000000" style="font-size:28px; font-weight:800; color:var(--dark); text-decoration:none; font-family:'Montserrat',sans-serif;">
+                +7 (8412) 00-00-00
+            </a>
+        </div>
+        <button class="btn-primary" onclick="window.location.href='tel:+78412000000'" style="width:100%; font-size:16px; padding:14px;">
+            <i class="fas fa-phone" style="margin-right:8px;"></i> Позвонить
+        </button>
+        <p style="font-size:12px; color:var(--text-light); margin-top:16px;">Нажмите на номер, чтобы скопировать</p>
+    </div>
+</div>
+
+<!-- MODAL ДЛЯ ЗАЯВКИ -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModalOutside(event)">
+    <div class="modal">
+        <button class="modal-close" onclick="closeModal()">✕</button>
+        <h3><i class="fas fa-pen" style="color:var(--gold); margin-right:10px;"></i>Бесплатная консультация</h3>
+        <p>Оставьте заявку — наш специалист перезвонит в течение 15 минут.</p>
+        <div id="modalFormWrap">
+            <div class="form-group">
+                <label style="color:var(--dark);font-weight:700;font-size:13px;font-family:'Montserrat',sans-serif;">Ваше имя *</label>
+                <input type="text" id="mname" placeholder="Иван Иванов">
+            </div>
+            <div class="form-group">
+                <label style="color:var(--dark);font-weight:700;font-size:13px;font-family:'Montserrat',sans-serif;">Номер телефона *</label>
+                <input type="tel" id="mphone" placeholder="+7 (___) ___-__-__">
+            </div>
+            <div class="form-group">
+                <label style="color:var(--dark);font-weight:700;font-size:13px;font-family:'Montserrat',sans-serif;">Что интересует?</label>
+                <select id="mtype">
+                    <option>Памятник из гранита</option>
+                    <option>Памятник из мрамора</option>
+                    <option>Ограда</option>
+                    <option>Цоколь</option>
+                    <option>Благоустройство</option>
+                    <option>Другое</option>
+                </select>
+            </div>
+            <div class="form-checkbox">
+                <input type="checkbox" id="mcheck" checked>
+                <label for="mcheck" style="font-size:12px;color:var(--text-light);">Соглашаюсь на обработку персональных данных</label>
+            </div>
+            <button class="btn-submit" onclick="submitForm('modalFormWrap', 'modalSuccess')">Отправить заявку</button>
+            <div class="success-msg" id="modalSuccess">Спасибо! Ваша заявка принята. Мы перезвоним в ближайшее время.</div>
+        </div>
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
